@@ -1,17 +1,46 @@
-# Welcome to MkDocs
+#　はじめに
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+このサイトでは、マジカン[133.242.23.174]で使用しているWebサーバーの構成・運用・トラブル対応等の
 
-## Commands
+ナレッジをまとめています。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+* * *
 
-## Project layout
+> ### Server
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [サーバー構成](/server/architecture/)
+- [Apache設定](/server/apache/)
+
+> ### deploy
+
+- [デプロイ手順](/deploy/flow/)
+
+> ### troubleshooting
+
+- [トラブル対応](/troubleshooting/common_issues/)
+
+> ### security
+
+- [セキュリティ設定](/security/firewall/)
+
+### MkDocsファイル構成
+
+```
+docs/
+├── index.md                    ← はじめに
+├── server/
+│   ├── architecture.md         ← サーバー構成
+│   ├── apache.md               ← Apache + Passenger 構成
+│   ├── nfs.md                  ← NFSについて
+│   |── backup.md               ← バックアップ・リストア
+├── deploy/
+│   ├── flow.md                 ← デプロイフロー
+├── git/
+│   ├── operation.md            ← Git運用
+├── troubleshooting/
+│   ├── logs.md                 ← ログの確認
+|── security/
+|   ├── firewall.md             ← ファイアウォール設定
+|   └── ssh.md                  ← SSH接続・鍵管理
+└── stylesheets/                ← CSS
+```
