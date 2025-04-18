@@ -37,21 +37,21 @@ NFSサーバが公開したディレクトリをNFSクライアントがマウ�
 
 > ### NFSサーバ側
 
-1. **NFSの公開ディレクトリを確認**　```cat /etc/exports```　←※ NFSクライアントに対するディレクトリ許可の記述があるか
+1. **NFSの公開ディレクトリを確認**　<code style="color:#FF5370;">cat /etc/exports</code>　←※ NFSクライアントに対するディレクトリ許可の記述があるか
 
-2. **(※必要に応じて)**　```systemctl start nfs-server```
+2. **(※必要に応じて)**　<code style="color:#FF5370;">systemctl start nfs-server</code>
 
-3. **(※必要に応じて)**　```systemctl enable nfs-server```
+3. **(※必要に応じて)**　<code style="color:#FF5370;">systemctl enable nfs-server</code>
 
-4. **NFSサーバのステータスを確認**　```systemctl status nfs-server```
+4. **NFSサーバのステータスを確認**　<code style="color:#FF5370;">systemctl status nfs-server</code>
 
-5. **NFSサーバでエクスポートされているディレクトリを確認**　```showmount -e```
+5. **NFSサーバでエクスポートされているディレクトリを確認**　<code style="color:#FF5370;">showmount -e</code>
 
 > ### NFSクライアント側
 
-1. ```mount -t nfs {NFSクライアントIP}:///var/share/admintools/public/system /var/share/admintools/public/system```
+1. <code style="color:#FF5370;">mount -t nfs {NFSクライアントIP}:///var/share/admintools/public/system /var/share/admintools/public/system</code>
 
-2. **マウントされているか確認**　```df```
+2. **マウントされているか確認**　<code style="color:#FF5370;">df</code>
 
 
 !!! note "**メモ**"

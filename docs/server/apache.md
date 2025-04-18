@@ -21,9 +21,9 @@
 
 * * *
 
-1. ```systemctl restart httpd```
+1. <code style="color:#FF5370;">systemctl restart httpd</code>
 
-2. ```touch [RailsRoot]/tmp/restart.txt```
+2. <code style="color:#FF5370;">touch [RailsRoot]/tmp/restart.txt</code>
 
 ```tmp/restart.txt```　←　Passenger はこのファイルのタイムスタンプを見ることで再起動を判断します。
 
@@ -31,9 +31,9 @@
 
 * * *
 
-1. ```passenger-status```
+1. <code style="color:#FF5370;">passenger-status</code>
 
-2. ```systemctl status httpd```
+2. <code style="color:#FF5370;">systemctl status httpd</code>
 
 3. ```/var/httpd/logs/access.log```を確認する
 

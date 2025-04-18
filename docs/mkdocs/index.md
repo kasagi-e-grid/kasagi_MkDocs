@@ -9,9 +9,9 @@
 
 * * *
 
-1. ```git clone https://github.com/kasagi-e-grid/kasagi_MkDocs```
+1. <code style="color:#FF5370;">git clone https://github.com/kasagi-e-grid/kasagi_MkDocs</code>
 
-2. ```docker-compose up``` 又は ```docker-compose up -d```
+2. <code style="color:#FF5370;">docker-compose up``` 又は ```docker-compose up -d</code>
 
 3. [http://localhost:8000]()にアクセス
 
@@ -54,7 +54,7 @@
 
 ※ github actionsで`main`にpushされた時点でデプロイされます。
 
-1. ```git push```
+1. <code style="color:#FF5370;">git push</code>
 
 
 !!! note "**メモ**"

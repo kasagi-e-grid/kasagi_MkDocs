@@ -9,19 +9,19 @@
 
 * * *
 
-1. **SSHアクセス**　```ssh -p 23422 -i 秘密鍵 majisemi@133.242.49.167```
+1. **SSHアクセス**　<code style="color:#FF5370;">ssh -p 23422 -i 秘密鍵 majisemi@133.242.49.167</code>
 
-2. **プロジェクトファイルに移動**　```cd /var/share/admintools```
+2. **プロジェクトファイルに移動**　<code style="color:#FF5370;">cd /var/share/admintools</code>
 
-3. ```git fetch```
+3. <code style="color:#FF5370;">git fetch</code>
 
-4. ```git pull```
+4. <code style="color:#FF5370;">git pull</code>
 
-5. **(※必要に応じて)**　```bundle install```
+5. **(※必要に応じて)**　<code style="color:#FF5370;">bundle install</code>
 
-6. **(※必要に応じて)**　```bundle exec rails assets:precompile```
+6. **(※必要に応じて)**　<code style="color:#FF5370;">bundle exec rails assets:precompile</code>
 
-7. **Apacheの再起動**　```systemctl restart httpd```
+7. **Apacheの再起動**　<code style="color:#FF5370;">systemctl restart httpd</code>
 
 !!! note "**メモ**"
 
