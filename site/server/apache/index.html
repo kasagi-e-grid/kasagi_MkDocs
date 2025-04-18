@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../../security/ssh/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../architecture/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>My Docs</title>
+        <title>Apache + Passenger 構成 - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,11 +46,11 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#apache-passenger" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -103,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Apache + Passenger 構成
             
           </span>
         </div>
@@ -203,7 +212,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -221,7 +230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -281,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deploy/flow/" class="md-nav__link">
+      <a href="../../deploy/flow/" class="md-nav__link">
         
   
   
@@ -349,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/git/operation/" class="md-nav__link">
+      <a href="../../git/operation/" class="md-nav__link">
         
   
   
@@ -417,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/security/firewall/" class="md-nav__link">
+      <a href="../../security/firewall/" class="md-nav__link">
         
   
   
@@ -440,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/security/ssh/" class="md-nav__link">
+      <a href="../../security/ssh/" class="md-nav__link">
         
   
   
@@ -467,18 +476,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -494,7 +505,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Server
@@ -505,10 +516,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/server/apache/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Apache + Passenger 構成
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -519,6 +552,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requestまでの流れ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      再起動方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作確認
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="動作確認">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      関連ポート
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/server/architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -554,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/server/nfs/" class="md-nav__link">
+      <a href="../nfs/" class="md-nav__link">
         
   
   
@@ -622,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/troubleshooting/logs/" class="md-nav__link">
+      <a href="../../troubleshooting/logs/" class="md-nav__link">
         
   
   
@@ -662,6 +757,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requestまでの流れ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      再起動方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作確認
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="動作確認">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      関連ポート
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -673,8 +820,80 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="apache-passenger">Apache + Passenger 構成</h1>
+<p><code>作成者：笠木</code></p>
+<div class="admonition info">
+<p class="admonition-title"><strong>このドキュメントについて</strong></p>
+<p><strong>Apache + Passengerで普段実行しているコマンドなどをまとめたものです。</strong></p>
+</div>
+<h2 id="request">Requestまでの流れ</h2>
+<hr />
+<div class="highlight"><pre><span></span><code>[Client]
+   ↓
+[Apache (mod_passenger)]
+   ↓
+[Rails App]
+</code></pre></div>
+<h2 id="_1">再起動方法</h2>
+<hr />
+<ol>
+<li>
+<p><code>systemctl restart httpd</code></p>
+</li>
+<li>
+<p><code>touch [RailsRoot]/tmp/restart.txt</code></p>
+</li>
+</ol>
+<p><code>tmp/restart.txt</code>　←　Passenger はこのファイルのタイムスタンプを見ることで再起動を判断します。</p>
+<h2 id="_2">動作確認</h2>
+<hr />
+<ol>
+<li>
+<p><code>passenger-status</code></p>
+</li>
+<li>
+<p><code>systemctl status httpd</code></p>
+</li>
+<li>
+<p><code>/var/httpd/logs/access.log</code>を確認する</p>
+</li>
+<li>
+<p>Railsログを確認する</p>
+</li>
+</ol>
+<hr />
+<p><br></p>
+<div class="admonition note">
+<p class="admonition-title"><strong>メモ</strong></p>
+</div>
+<blockquote>
+<h4 id="_3">関連ポート</h4>
+</blockquote>
+<ul>
+<li>
+<p>80</p>
+</li>
+<li>
+<p>443</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -710,10 +929,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["content.code.copy"], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
