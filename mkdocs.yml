@@ -26,3 +26,5 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js
 
 use_directory_urls: false
+
+site_url: https://kasagi-e-grid.github.io/kasagi_MkDocs/
