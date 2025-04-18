@@ -28,3 +28,12 @@ extra_css:
 use_directory_urls: false
 
 site_url: https://kasagi-e-grid.github.io/kasagi_MkDocs/
+
+nav:
+    - はじめに: index.md
+    - サーバ構成について: server/architecture.md
+    - Apacheについて: server/server.md
+    - NFSについて: server/nfs.md
+    - Git運用について: git/operation.md
+    - デプロイについて: deploy/flow.md
+    - Mkdocsについて: mkdocs/index.md

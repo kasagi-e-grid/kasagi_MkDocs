@@ -4,26 +4,9 @@
 
 ナレッジをまとめています。
 
-* * *
-
-> ### Server
-
-- [サーバー構成](server/architecture.md)
-- [Apache設定](server/apache.md)
-
-> ### deploy
-
-- [デプロイ手順](deploy/flow.md)
-
-> ### troubleshooting
-
-- [トラブル対応](troubleshooting/common_issues.md)
-
-> ### security
-
-- [セキュリティ設定](security/firewall.md)
-
 ### MkDocsファイル構成
+
+* * *
 
 ```
 docs/
